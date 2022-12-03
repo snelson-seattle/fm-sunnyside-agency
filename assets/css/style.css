@@ -37,7 +37,7 @@ h3 {
 }
 
 .header {
-  min-height: 100vh;
+  min-height: 105vh;
   background-image: url("../images/desktop/image-header.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -56,10 +56,10 @@ h3 {
 }
 
 .arrow-down {
-  margin-top: 3.5rem;
+  margin-top: 4rem;
   display: block;
   align-self: center;
-  height: 7rem;
+  height: 8rem;
   width: 2rem;
 }
 
@@ -193,6 +193,11 @@ h3 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  color: var(--dark-desaturated-cyan);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .photography {
@@ -200,7 +205,32 @@ h3 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  color: var(--dark-blue);
 }
+
+.graphic-design div,
+.photography div {
+  margin-top: 15rem;
+  width: 90%;
+  height: 60vh;
+  padding: 1rem 2rem;
+}
+
+.graphic-design div h2,
+.photography div h2 {
+  margin: 2rem 0 1.5rem 0;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.graphic-design div p,
+.photography div p {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+
 
 .testimonials {
   height: 70vh;
