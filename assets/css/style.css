@@ -230,14 +230,18 @@ h3 {
   line-height: 1.5;
 }
 
-
-
 .testimonials {
-  height: 70vh;
+  height: 100vh;
 }
 
 .testimonials h2 {
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+  font-size: 1.5rem;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+  color: var(--grayish-blue);
 }
 
 .testimonials div {
@@ -256,12 +260,29 @@ h3 {
   gap: 0.75rem;
 }
 
+.testimonial img {
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
 .testimonial p {
   text-align: center;
 }
 
+.testimonial-text {
+  line-height: 1.6;
+  letter-spacing: .1rem;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: var(--very-dark-grayish-blue);
+}
+
 .testimonial-author {
   font-family: var(--heading-font);
+}
+
+.testimonial-author__position {
+  color: var(--grayish-blue);
 }
 
 .image-gallery {
