@@ -169,6 +169,8 @@ h3 {
   bottom: .4rem;
   width: 9.5rem;
   height: .2rem;
+  z-index: -1;
+  border-radius: 1rem;
 }
 
 .transform div button p::after {
@@ -177,6 +179,11 @@ h3 {
 
 .standout div button p::after {
   background-color: var(--soft-red);
+}
+
+.transform div button:hover p::after,
+.standout div button:hover p::after {
+  height: .5rem;
 }
 
 
@@ -296,7 +303,7 @@ h3 {
 .footer .logo svg {
   position: absolute;
   top: 0;
-  left: 4.25rem;
+  left: 4.6rem;
   width: 25rem;
 }
 
