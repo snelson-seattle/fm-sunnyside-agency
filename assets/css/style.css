@@ -105,7 +105,6 @@ h1, h2, h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: aqua;
 }
 
 .grid-container section + div {
@@ -122,9 +121,49 @@ h1, h2, h3 {
   background-size: cover;
 }
 
-.transform h2 {
-  font-size: 3rem;
+.transform div {
+  width: 90%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;  
 }
+
+.transform div h2 {
+  font-size: 4rem;
+}
+
+.transform div p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: var(--very-dark-grayish-blue);
+}
+
+.transform div button {
+  display: flex;
+  font-family: var(--heading-font);
+  font-size: 1.5rem;
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.transform div button p {
+  position: relative;
+  color: black;
+}
+
+.transform div button p::after {
+  content: "";
+  position: absolute;
+  left: -0.5rem;
+  bottom: .4rem;
+  width: 9.5rem;
+  height: .2rem;
+  background-color: var(--yellow);
+}
+
 
 .graphic-design {
   background-image: url("../images/desktop/image-graphic-design.jpg");
