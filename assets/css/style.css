@@ -30,7 +30,9 @@ html {
   font-family: var(--body-font);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: var(--heading-font);
 }
 
@@ -85,7 +87,7 @@ h1, h2, h3 {
   text-decoration: none;
   color: var(--white);
   padding: .5rem .75rem;
-  
+
 }
 
 .navigation ul li a:hover {
@@ -107,39 +109,43 @@ h1, h2, h3 {
   align-items: center;
 }
 
-.grid-container section + div {
+.grid-container section+div {
   background-image: url("../images/desktop/image-transform.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.grid-container div + div {
+.grid-container div+div {
   background-image: url("../images/desktop/image-stand-out.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.transform div {
+.transform div,
+.standout div {
   width: 90%;
   height: 60vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;  
+  justify-content: space-around;
 }
 
-.transform div h2 {
+.transform div h2,
+.standout div h2 {
   font-size: 4rem;
 }
 
-.transform div p {
+.transform div p,
+.standout div p {
   font-size: 1.5rem;
   line-height: 1.5;
   color: var(--very-dark-grayish-blue);
 }
 
-.transform div button {
+.transform div button,
+.standout div button {
   display: flex;
   font-family: var(--heading-font);
   font-size: 1.5rem;
@@ -149,19 +155,28 @@ h1, h2, h3 {
   cursor: pointer;
 }
 
-.transform div button p {
+.transform div button p,
+.standout div button p {
   position: relative;
   color: black;
 }
 
-.transform div button p::after {
+.transform div button p::after,
+.standout div button p::after {
   content: "";
   position: absolute;
   left: -0.5rem;
   bottom: .4rem;
   width: 9.5rem;
   height: .2rem;
+}
+
+.transform div button p::after {
   background-color: var(--yellow);
+}
+
+.standout div button p::after {
+  background-color: var(--soft-red);
 }
 
 
@@ -305,6 +320,7 @@ h1, h2, h3 {
   font-size: 11px;
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
